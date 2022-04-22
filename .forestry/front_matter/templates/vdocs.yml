@@ -1,0 +1,46 @@
+---
+label: Vdocs
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: Titulo
+  config:
+    required: false
+- type: file
+  name: vdfi
+  label: Archivo
+  config:
+    maxSize: 
+- type: text
+  name: sur
+  label: Enlace
+- type: list
+  name: categories
+  label: Categorías
+  config:
+    use_select: true
+    source:
+      type: simple
+      section: jekyll-posts
+      file: _posts/2022-04-13-vardoc.md
+      path: categories
+    options:
+    - Aritmetics
+    - ISO
+    - Arq
+    - Mate
+- type: text
+  name: author
+  label: author
+  default: varbot
+  hidden: true
+- type: text
+  name: layout
+  label: layout
+  default: vdoc
+  hidden: true
+- type: list
+  name: tags
+  label: tags
+  hidden: true

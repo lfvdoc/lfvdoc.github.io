@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2022-04-22T10:00:28-05:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html">VarDocs</title><subtitle>Test dev web</subtitle><entry><title type="html">Iframe V2</title><link href="http://0.0.0.0:4000/iframe-v2/" rel="alternate" type="text/html" title="Iframe V2" /><published>2022-04-22T00:00:00-05:00</published><updated>2022-04-22T00:00:00-05:00</updated><id>http://0.0.0.0:4000/iframe-v2</id><content type="html" xml:base="http://0.0.0.0:4000/iframe-v2/"></content><author><name>varbot</name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://0.0.0.0:4000/uploads/wallv2.jpg" /></entry><entry><title type="html">Test if url or doc</title><link href="http://0.0.0.0:4000/test-if-url-doc/" rel="alternate" type="text/html" title="Test if url or doc" /><published>2022-04-17T00:00:00-05:00</published><updated>2022-04-17T00:00:00-05:00</updated><id>http://0.0.0.0:4000/test-if-url-doc</id><content type="html" xml:base="http://0.0.0.0:4000/test-if-url-doc/">&lt;p&gt;ff&lt;/p&gt;
+
+&lt;h2 id=&quot;gg&quot;&gt;gg&lt;/h2&gt;</content><author><name>varbot</name></author><summary type="html">ff</summary></entry><entry><title type="html">Test pdf pub</title><link href="http://0.0.0.0:4000/test-pdf-pub/" rel="alternate" type="text/html" title="Test pdf pub" /><published>2022-04-16T00:00:00-05:00</published><updated>2022-04-16T00:00:00-05:00</updated><id>http://0.0.0.0:4000/test-pdf-pub</id><content type="html" xml:base="http://0.0.0.0:4000/test-pdf-pub/"></content><author><name>varbot</name></author><summary type="html"></summary></entry><entry><title type="html">Other Spyder post</title><link href="http://0.0.0.0:4000/other-post/" rel="alternate" type="text/html" title="Other Spyder post " /><published>2022-04-05T00:00:00-05:00</published><updated>2022-04-05T00:00:00-05:00</updated><id>http://0.0.0.0:4000/other-post</id><content type="html" xml:base="http://0.0.0.0:4000/other-post/">&lt;h2 id=&quot;spyder-post&quot;&gt;Spyder Post&lt;/h2&gt;
+
+&lt;p&gt;Otro nuevo post gg bueno ahora no se&lt;/p&gt;</content><author><name></name></author><category term="spyder" /><summary type="html">Spyder Post</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://0.0.0.0:4000/uploads/thumbnail.jpg" /></entry><entry><title type="html">Practice Post</title><link href="http://0.0.0.0:4000/practice-post/" rel="alternate" type="text/html" title="Practice Post" /><published>2022-04-05T00:00:00-05:00</published><updated>2022-04-05T00:00:00-05:00</updated><id>http://0.0.0.0:4000/practice-post</id><content type="html" xml:base="http://0.0.0.0:4000/practice-post/">&lt;p&gt;Practice post&lt;/p&gt;
+
+&lt;p&gt;site url:
+http://0.0.0.0:4000&lt;/p&gt;
+
+&lt;p&gt;page url:
+/practice-post/&lt;/p&gt;
+
+&lt;p&gt;site baseurl:
+/&lt;/p&gt;
+
+&lt;p&gt;page title:
+Practice Post&lt;/p&gt;
+
+&lt;p&gt;replace - page url name:
+Practice-Post&lt;/p&gt;
+
+&lt;p&gt;base URL:
+/&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;//practice-post/index.html&quot; download=&quot;Practice-Post.odt.html&quot;&gt;Download Text&lt;/a&gt;&lt;/p&gt;</content><author><name>Lfrakie</name></author><summary type="html">Practice post</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://0.0.0.0:4000/uploads/prtscr-capture_79.jpg" /></entry><entry><title type="html">Rose Post</title><link href="http://0.0.0.0:4000/rose-post/" rel="alternate" type="text/html" title="Rose Post" /><published>2022-04-05T00:00:00-05:00</published><updated>2022-04-05T00:00:00-05:00</updated><id>http://0.0.0.0:4000/rose-post</id><content type="html" xml:base="http://0.0.0.0:4000/rose-post/">&lt;h1 id=&quot;rose-post&quot;&gt;Rose Post&lt;/h1&gt;
+
+&lt;p&gt;Lorem rose aaa ff aaa vv cc rr&lt;/p&gt;</content><author><name>franz</name></author><category term="Rose" /><summary type="html">Rose Post</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://0.0.0.0:4000/uploads/huawei-mate-x2-wallpaper-img-5-jpg-1280x1280-google-chrome.jpg" /></entry><entry><title type="html">From fores…</title><link href="http://0.0.0.0:4000/from-fores/" rel="alternate" type="text/html" title="From fores... " /><published>2022-04-03T00:00:00-05:00</published><updated>2022-04-03T00:00:00-05:00</updated><id>http://0.0.0.0:4000/from-fores...</id><content type="html" xml:base="http://0.0.0.0:4000/from-fores/"></content><author><name>Lfranz</name></author><category term="fores" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://0.0.0.0:4000/uploads/pages-build-and-deployment-lfrakiejekyll-mundana-deploy-493e454-google-chrome.jpg" /></entry><entry><title type="html">Holo This is my first post</title><link href="http://0.0.0.0:4000/holo-this-is-my-first-post/" rel="alternate" type="text/html" title="Holo This is my first post" /><published>2021-10-09T00:00:00-05:00</published><updated>2021-10-09T00:00:00-05:00</updated><id>http://0.0.0.0:4000/holo-this-is-my-first-post</id><content type="html" xml:base="http://0.0.0.0:4000/holo-this-is-my-first-post/">&lt;h1 id=&quot;title-first-post&quot;&gt;Title first post&lt;/h1&gt;
+
+&lt;p&gt;Asdasdas lorem&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/uploads/frankobsidian-obsidian-v0-12-15.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>franz</name></author><category term="tag-asd" /><summary type="html">Title first post</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://0.0.0.0:4000/uploads/frankobsidian-obsidian-v0-12-15.jpg" /></entry><entry><title type="html">FFFF TEST POST</title><link href="http://0.0.0.0:4000/ffff-test-post/" rel="alternate" type="text/html" title="FFFF TEST POST" /><published>2021-10-08T00:00:00-05:00</published><updated>2021-10-08T00:00:00-05:00</updated><id>http://0.0.0.0:4000/ffff-test-post</id><content type="html" xml:base="http://0.0.0.0:4000/ffff-test-post/">&lt;p&gt;Este es texto de pruebas&lt;/p&gt;
+
+&lt;h4 id=&quot;fffffffffffffff-early-18th-century-woodcut-of-bucharest&quot;&gt;fffffffffffffff Early 18th century woodcut of Bucharest&lt;/h4&gt;
+
+&lt;p&gt;fffffffffffff The Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;</content><author><name>FFF</name></author><category term="meta tags" /><summary type="html">Este es texto de pruebas</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://0.0.0.0:4000/assets/images/ng.jpg" /></entry><entry><title type="html">ff</title><link href="http://0.0.0.0:4000/ff/" rel="alternate" type="text/html" title="ff" /><published>2021-01-18T00:00:00-05:00</published><updated>2021-01-18T00:00:00-05:00</updated><id>http://0.0.0.0:4000/ff</id><content type="html" xml:base="http://0.0.0.0:4000/ff/">&lt;p&gt;Este es texto de pruebas&lt;/p&gt;
+
+&lt;p&gt;//ff/index.html&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;//ff/index.html&quot; download=&quot;ff.odt.html&quot;&gt;Download Text&lt;/a&gt;&lt;/p&gt;</content><author><name>FFF</name></author><category term="meta tags" /><summary type="html">Este es texto de pruebas</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://0.0.0.0:4000/assets/images/ng.jpg" /></entry></feed>

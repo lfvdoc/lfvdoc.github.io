@@ -1,0 +1,30 @@
+---
+label: Post-matter-template
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: sur
+  label: sur
+- type: file
+  name: image
+  label: image
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: author
+  label: author
+  default: varbot
+  hidden: true
+- type: list
+  name: categories
+  label: categories
+- type: list
+  name: tags
+  label: tags
+pages:
+- _posts/2022-04-16-test-pdf-pub.md
+- _posts/2022-04-22-iframe-v2.md

@@ -1,0 +1,20 @@
+---
+title: "Filter per VAR"
+layout: default
+permalink: "/all-posts.html"
+---
+
+<div class="col-md-8">        
+    <div class="row align-items-center mb-5">
+        <div class="col-md-9">
+            <h2> {{page.title}}</h2>
+            
+
+    <h4 class="font-weight-bold spanborder"><span>Posts by {{page.title}}</span></h4>
+
+        {% assign posts = site.posts | where:"categories","News" %}
+        {% for post in posts %}
+        {% include main-loop-card.html %}
+        {% endfor %}
+        
+</div>
