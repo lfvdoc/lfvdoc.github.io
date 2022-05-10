@@ -7,36 +7,151 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
 ---
 
 
-<div class="container">
+<div class="mostrador">
     
 {% if page.url == "/" %}
     
     
-    
 <!-- Begin post excerpts, let's highlight the first 4 posts on top -->
-<div class="row remove-site-content-margin">
+<div style="display: flex; justify-content: center; flex-wrap: wrap;">
     
     <!-- latest post -->
     {% assign latest_post = site.posts[0] %}
 
+
     <!-- first card -->
-    <div class="col-md-6">
-    <div class="card border-0 mb-4 box-shadow">   
+    <div class="vdocs">
+
+            <div class="card-title">
+            <a style="color: #ffffff;" href=".{{latest_post.url}}"> 
+                <h2>
+                <span class="link-post-card">{{ latest_post.title }}</span>
+               </h2>
+             </a>
+            </div>
+                
+            <div class="catego-card">
+                <!-- En: -->
+                 <span>
+                    {% for category in latest_post.categories %}
+                    <a style="color: #ffffff; font-weight: 700;" href="./categories.html#{{ category | downcase }}"><span class="sep">#{{ category }}</a> </span>
+                    {% endfor %}
+                    </span>
+            </div>
+
+        
+            <div class="date-card">
+                {{ latest_post.date | date: '%b %d, %Y' }}
+            </div> 
+
+
+
+            <!-- <div class="down-btn" onclick="location.href='#bb';" style="cursor: pointer;">
+
+            </div> -->
+
+
+
+        <div class="down-btn" >
+          
+            
+            <a href=".{{latest_post.url}}index.html" download="{{latest_post.title | replace: " ", "-"}}.odt.html">
+                DOWNLOAD
+            </a>
+
+        </div>
+
+
+
     <a href=".{{latest_post.url}}">
 
-    <div class="topfirstimage" style="background-image: url({% if latest_post.image contains "://" %}{{ latest_post.image }}{% else %} .{{ latest_post.image}}{% endif %}); height: 200px;    background-size: cover;    background-repeat: no-repeat;"></div>     
+        <div style="background-image: url({% if latest_post.image contains "://" %}{{ latest_post.image }}{% else %} .{{ latest_post.image}}{% endif %}); height: 100%;    background-size: cover;    background-repeat: no-repeat;  background-position:center;">
+            
+   
+        </div>
+
+    <!-- <div class="topfirstimage" style="background-image: url({% if latest_post.image contains "://" %}{{ latest_post.image }}{% else %} .{{ latest_post.image}}{% endif %}); height: 200px;    background-size: cover;    background-repeat: no-repeat;"></div>      -->
     </a>
 
-    <div class="card-body px-0 pb-0 d-flex flex-column align-items-start">
-    <h2 class="h4 font-weight-bold">
-    <a class="text-dark" href=".{{latest_post.url}}">{{ latest_post.title }}</a>
-    </h2>
-    <p class="excerpt">
-        {{ latest_post.excerpt | strip_html | strip_newlines | truncate: 136 }}
-    </p>
-    <div>
+
+        <!-- para mostrar un abstracto de la entrada -->
+        <!-- <p class="excerpt">
+                {{ latest_post.excerpt | strip_html | strip_newlines | truncate: 136 }}
+         </p> -->
+    
+         <!-- <iframe style="width: 100%; height: 350px;" src="{{latest_post.sur}}" frameborder="0"></iframe> -->
+
+
+    </div>
+    <!-- END first card -->
+
+
+
+
+
+
+        <!-- second card -->
+        <div class="vdocs">
+            <!-- <div class="card border-0 mb-4 box-shadow"></div>    -->
+            <a href=".{{latest_post.url}}">
+        
+            <div class="topfirstimage" style="background-image: url({% if latest_post.image contains "://" %}{{ latest_post.image }}{% else %} .{{ latest_post.image}}{% endif %}); height: 200px;    background-size: cover;    background-repeat: no-repeat;"></div>     
+            </a>
+        
+            <!-- <iframe style="width: 100%; height: 350px;" src="{{latest_post.sur}}" frameborder="0"></iframe> -->
+            
+            <h2 class="h4 font-weight-bold">
+                <a class="text-dark" href=".{{latest_post.url}}">{{ latest_post.title }}</a>
+               </h2>
+        
+               <p class="excerpt">
+                {{ latest_post.excerpt | strip_html | strip_newlines | truncate: 136 }}
+            </p>
+        
+        
+            <small class="d-block text-muted">
+                En: <span class="catlist">
+                    {% for category in latest_post.categories %}
+                    <a class="text-capitalize text-muted smoothscroll" href="./categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
+                    {% endfor %}
+                    </span>                   
+            </small>
+            <h3 class="h4 font-weight-bold">
+                <a class="text-dark" href=".{{latest_post.url}}index.html" download="{{latest_post.title | replace: " ", "-"}}.odt.html">DOWNLOAD</a>
+                </h3>
+        
+            <small class="text-muted">
+                {{ latest_post.date | date: '%b %d, %Y' }}
+            </small>
+        
+            <!-- <div class="card-body px-0 pb-0 d-flex flex-column align-items-start">
+            <div> -->
+        
+            </div>
+<!-- END second card -->
+
+
+    <!-- third card -->
+    <div class="vdocs" style="">
+        <!-- <div class="card border-0 mb-4 box-shadow"></div>    -->
+        <a href=".{{latest_post.url}}">
+    
+        <div class="topfirstimage" style="background-image: url({% if latest_post.image contains "://" %}{{ latest_post.image }}{% else %} .{{ latest_post.image}}{% endif %}); height: 200px;    background-size: cover;    background-repeat: no-repeat;"></div>     
+        </a>
+    
+        <!-- <iframe style="width: 100%; height: 350px;" src="{{latest_post.sur}}" frameborder="0"></iframe> -->
+        
+        <h2 class="h4 font-weight-bold">
+            <a class="text-dark" href=".{{latest_post.url}}">{{ latest_post.title }}</a>
+           </h2>
+    
+           <p class="excerpt">
+            {{ latest_post.excerpt | strip_html | strip_newlines | truncate: 136 }}
+        </p>
+    
+    
         <small class="d-block text-muted">
-            In <span class="catlist">
+            En: <span class="catlist">
                 {% for category in latest_post.categories %}
                 <a class="text-capitalize text-muted smoothscroll" href="./categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
                 {% endfor %}
@@ -44,14 +159,63 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
         </small>
         <h3 class="h4 font-weight-bold">
             <a class="text-dark" href=".{{latest_post.url}}index.html" download="{{latest_post.title | replace: " ", "-"}}.odt.html">DOWNLOAD</a>
-
-            <!-- <a href=".{{page.url}}/index.html" download="{{page.title | replace: " ", "-"}}.odt.html">Download Text</a> -->
             </h3>
+    
         <small class="text-muted">
             {{ latest_post.date | date: '%b %d, %Y' }}
         </small>
-    </div>
-    </div>
+    
+        <!-- <div class="card-body px-0 pb-0 d-flex flex-column align-items-start">
+        <div> -->
+    
+        </div>
+<!-- END third card -->
+
+
+
+    <!-- for card -->
+    <div class="vdocs" style="">
+        <!-- <div class="card border-0 mb-4 box-shadow"></div>    -->
+        <a href=".{{latest_post.url}}">
+    
+        <div class="topfirstimage" style="background-image: url({% if latest_post.image contains "://" %}{{ latest_post.image }}{% else %} .{{ latest_post.image}}{% endif %}); height: 200px;    background-size: cover;    background-repeat: no-repeat;"></div>     
+        </a>
+    
+        <!-- <iframe style="width: 100%; height: 350px;" src="{{latest_post.sur}}" frameborder="0"></iframe> -->
+        
+        <h2 class="h4 font-weight-bold">
+            <a class="text-dark" href=".{{latest_post.url}}">{{ latest_post.title }}</a>
+           </h2>
+    
+           <p class="excerpt">
+            {{ latest_post.excerpt | strip_html | strip_newlines | truncate: 136 }}
+        </p>
+    
+    
+        <small class="d-block text-muted">
+            En: <span class="catlist">
+                {% for category in latest_post.categories %}
+                <a class="text-capitalize text-muted smoothscroll" href="./categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
+                {% endfor %}
+                </span>                   
+        </small>
+        <h3 class="h4 font-weight-bold">
+            <a class="text-dark" href=".{{latest_post.url}}index.html" download="{{latest_post.title | replace: " ", "-"}}.odt.html">DOWNLOAD</a>
+            </h3>
+    
+        <small class="text-muted">
+            {{ latest_post.date | date: '%b %d, %Y' }}
+        </small>
+    
+        <!-- <div class="card-body px-0 pb-0 d-flex flex-column align-items-start">
+        <div> -->
+    
+        </div>
+        
+<!-- END for card -->
+
+
+
     </div>
     </div>
 
