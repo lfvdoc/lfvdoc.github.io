@@ -1,5 +1,5 @@
 ---
-title: "Home"
+title: ""
 layout: default
 pagination:
     enabled: true
@@ -7,140 +7,222 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
 ---
 
 
-<div class="container">
+<div class="mostrador">
     
 {% if page.url == "/" %}
     
     
-    
 <!-- Begin post excerpts, let's highlight the first 4 posts on top -->
-<div class="row remove-site-content-margin">
+<div style="display: flex; justify-content: center; flex-wrap: wrap;">
     
-    <!-- latest post -->
+
+
+    <!-- first card - latest post -->
     {% assign latest_post = site.posts[0] %}
+    <div class="vdocs">
 
-    <!-- first card -->
-    <div class="col-md-6">
-    <div class="card border-0 mb-4 box-shadow">   
-    <a href=".{{latest_post.url}}">
-
-    <div class="topfirstimage" style="background-image: url({% if latest_post.image contains "://" %}{{ latest_post.image }}{% else %} .{{ latest_post.image}}{% endif %}); height: 200px;    background-size: cover;    background-repeat: no-repeat;"></div>     
-    </a>
-
-    <div class="card-body px-0 pb-0 d-flex flex-column align-items-start">
-    <h2 class="h4 font-weight-bold">
-    <a class="text-dark" href=".{{latest_post.url}}">{{ latest_post.title }}</a>
-    </h2>
-    <p class="excerpt">
-        {{ latest_post.excerpt | strip_html | strip_newlines | truncate: 136 }}
-    </p>
-    <div>
-        <small class="d-block text-muted">
-            In <span class="catlist">
-                {% for category in latest_post.categories %}
-                <a class="text-capitalize text-muted smoothscroll" href="./categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
-                {% endfor %}
-                </span>                   
-        </small>
-        <h3 class="h4 font-weight-bold">
-            <a class="text-dark" href=".{{latest_post.url}}index.html" download="{{latest_post.title | replace: " ", "-"}}.odt.html">DOWNLOAD</a>
-
-            <!-- <a href=".{{page.url}}/index.html" download="{{page.title | replace: " ", "-"}}.odt.html">Download Text</a> -->
-            </h3>
-        <small class="text-muted">
-            {{ latest_post.date | date: '%b %d, %Y' }}
-        </small>
-    </div>
-    </div>
-    </div>
-    </div>
-
-
-
-    
-    <div class="col-md-6">
-        
-        <!-- second latest post -->
-        {%- assign second_post = site.posts[1] -%}        
-        <div class="mb-3 d-flex align-items-center">                
-                {% if second_post.image %}
-                <div class="col-md-4">
-                <a href=".{{second_post.url}}">
-                <img class="w-100" src="{% if second_post.image contains "://" %}{{ second_post.image }}{% else %}.{{ second_post.image }}{% endif %}" alt="{{ second_post.title }}">                </a>
-                </div>
-                {% endif %}                
-                <div>
-                    <h2 class="mb-2 h6 font-weight-bold">
-                    <a class="text-dark" href=".{{second_post.url}}">{{ second_post.title }}</a>
-                    </h2>
-                    <small class="d-block text-muted">
-                        In <span class="catlist">
-                        {% for category in second_post.categories %}
-                        <a class="text-capitalize text-muted smoothscroll" href="./categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
-                        {% endfor %}
-                        </span>                   
-                    </small>
-                    <small class="text-muted">
-                        {{ second_post.date | date: '%b %d, %Y' }}
-                    </small>
-                </div>
-            </div>
-        
-        <!-- third latest post -->
-        {%- assign third_post = site.posts[2] -%}        
-        <div class="mb-3 d-flex align-items-center">                
-                {% if third_post.image %}
-                <div class="col-md-4">
-                <a href=".{{third_post.url}}">
-                 <img class="w-100" src="{% if third_post.image contains "://" %}{{ third_post.image }}{% else %}.{{ third_post.image }}{% endif %}" alt="{{ third_post.title }}">
+            <div class="card-title">
+                <a style="color: #ffffff;" href=".{{latest_post.url}}"> 
+                    <h2>
+                    <span class="link-post-card">{{ latest_post.title }}</span>
+                </h2>
                 </a>
-                </div>
-                {% endif %}                
-                <div>
-                    <h2 class="mb-2 h6 font-weight-bold">
-                    <a class="text-dark" href=".{{third_post.url}}">{{ third_post.title }}</a>
-                    </h2>
-                    <small class="d-block text-muted">
-                        In <span class="catlist">
-                        {% for category in third_post.categories %}
-                        <a class="text-capitalize text-muted smoothscroll" href="./categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
-                        {% endfor %}
-                        </span>                   
-                    </small>
-                    <small class="text-muted">
-                        {{ third_post.date | date: '%b %d, %Y' }}
-                    </small>
-                </div>
             </div>
-        
-        <!-- fourth latest post -->
-        {%- assign fourth_post = site.posts[3] -%}        
-        <div class="mb-3 d-flex align-items-center">                
-                {% if fourth_post.image %}
-                <div class="col-md-4">
-                <a href=".{{fourth_post.url}}">
-                <img class="w-100" src="{% if fourth_post.image contains "://" %}{{ fourth_post.image }}{% else %}.{{ fourth_post.image }}{% endif %}" alt="{{ fourth_post.title }}">
+                
+
+
+            <div class="catego-card">
+                 <span>
+                    {% for category in latest_post.categories %}
+                    <a style="color: #ffffff; font-weight: 700;" href="./categories.html#{{ category | downcase }}"><span class="sep">#{{ category }}</a> </span>
+                    {% endfor %}
+                    </span>
+            </div>
+
+
+
+            <div class="date-card">
+                {{ latest_post.date | date: '%b %d, %Y' }}
+            </div> 
+
+
+
+            <div class="down-btn">
+                <a href=".{{latest_post.url}}index.html" download="{{latest_post.title | replace: " ", "-"}}.odt.html">
+                DOWNLOAD       
                 </a>
-                </div>
-                {% endif %}                
-                <div>
-                    <h2 class="mb-2 h6 font-weight-bold">
-                    <a class="text-dark" href=".{{fourth_post.url}}">{{ fourth_post.title }}</a>
-                    </h2>
-                    <small class="d-block text-muted">
-                        In <span class="catlist">
-                        {% for category in fourth_post.categories %}
-                        <a class="text-capitalize text-muted smoothscroll" href="./categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
-                        {% endfor %}
-                        </span>                   
-                    </small>
-                    <small class="text-muted">
-                        {{ fourth_post.date | date: '%b %d, %Y' }}
-                    </small>
-                </div>
             </div>
-        
+
+
+            {% if latest_post.image %}
+            <a href=".{{latest_post.url}}">
+                <div style="background-image: url({% if latest_post.image contains "://" %}{{ latest_post.image }}{% else %} .{{ latest_post.image}}{% endif %}); height: 100%;    background-size: cover;    background-repeat: no-repeat;  background-position:center;">
+                </div>
+            </a>
+            {% endif %}
     </div>
+
+    <!-- END first card -->
+
+
+    <!-- Second card -->
+
+    {%- assign second_post = site.posts[1] -%}   
+    <div class="vdocs">
+
+            <div class="card-title">
+                <a style="color: #ffffff;" href=".{{second_post.url}}"> 
+                    <h2>
+                    <span class="link-post-card">{{ second_post.title }}</span>
+                </h2>
+                </a>
+            </div>
+                
+
+
+            <div class="catego-card">
+                 <span>
+                    {% for category in second_post.categories %}
+                    <a style="color: #ffffff; font-weight: 700;" href="./categories.html#{{ category | downcase }}"><span class="sep">#{{ category }}</a> </span>
+                    {% endfor %}
+                    </span>
+            </div>
+
+
+            
+            <div class="date-card">
+                {{ second_post.date | date: '%b %d, %Y' }}
+            </div> 
+
+
+
+            <div class="down-btn">
+                <a href=".{{second_post.url}}index.html" download="{{second_post.title | replace: " ", "-"}}.odt.html">
+                DOWNLOAD       
+                </a>
+            </div>
+
+
+            {% if second_post.image %}
+            <a href=".{{second_post.url}}">
+                <div style="background-image: url({% if second_post.image contains "://" %}{{ second_post.image }}{% else %} .{{ second_post.image}}{% endif %}); height: 100%;    background-size: cover;    background-repeat: no-repeat;  background-position:center;">
+                </div>
+            </a>
+            {% endif %}
+    </div>
+
+    <!-- END second card -->
+
+
+
+
+    <!-- third card -->
+
+    {%- assign third_p = site.posts[2] -%}   
+    <div class="vdocs">
+
+            <div class="card-title">
+                <a style="color: #ffffff;" href=".{{third_p.url}}"> 
+                    <h2>
+                    <span class="link-post-card">{{ third_p.title }}</span>
+                </h2>
+                </a>
+            </div>
+                
+
+
+            <div class="catego-card">
+                 <span>
+                    {% for category in third_p.categories %}
+                    <a style="color: #ffffff; font-weight: 700;" href="./categories.html#{{ category | downcase }}"><span class="sep">#{{ category }}</a> </span>
+                    {% endfor %}
+                    </span>
+            </div>
+
+
+            
+            <div class="date-card">
+                {{ third_p.date | date: '%b %d, %Y' }}
+            </div> 
+
+
+
+            <div class="down-btn">
+                <a href=".{{third_p.url}}index.html" download="{{third_p.title | replace: " ", "-"}}.odt.html">
+                DOWNLOAD       
+                </a>
+            </div>
+
+
+            {% if third_p.image %}
+            <a href=".{{third_p.url}}">
+                <div style="background-image: url({% if third_p.image contains "://" %}{{ third_p.image }}{% else %} .{{ third_p.image}}{% endif %}); height: 100%;    background-size: cover;    background-repeat: no-repeat;  background-position:center;">
+                </div>
+            </a>
+            {% endif %}
+    </div>
+
+
+<!-- END third card -->
+
+
+
+    <!-- for card -->
+
+    {%- assign for_p = site.posts[3] -%}   
+    <div class="vdocs">
+
+            <div class="card-title">
+                <a style="color: #ffffff;" href=".{{for_p.url}}"> 
+                    <h2>
+                    <span class="link-post-card">{{ for_p.title }}</span>
+                </h2>
+                </a>
+            </div>
+                
+
+
+            <div class="catego-card">
+                 <span>
+                    {% for category in for_p.categories %}
+                    <a style="color: #ffffff; font-weight: 700;" href="./categories.html#{{ category | downcase }}"><span class="sep">#{{ category }}</a> </span>
+                    {% endfor %}
+                    </span>
+            </div>
+
+
+            
+            <div class="date-card">
+                {{ for_p.date | date: '%b %d, %Y' }}
+            </div> 
+
+
+
+            <div class="down-btn">
+                <a href=".{{for_p.url}}index.html" download="{{for_p.title | replace: " ", "-"}}.odt.html">
+                DOWNLOAD       
+                </a>
+            </div>
+
+
+            {% if for_p.image %}
+            <a href=".{{for_p.url}}">
+                <div style="background-image: url({% if for_p.image contains "://" %}{{ for_p.image }}{% else %} .{{ for_p.image}}{% endif %}); height: 100%;    background-size: cover;    background-repeat: no-repeat;  background-position:center;">
+                </div>
+            </a>
+            {% endif %}
+    </div>
+        
+<!-- END for card -->
+
+
+
+    </div>
+    </div>
+
+
+
+
     
 </div>
     
@@ -177,9 +259,9 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
     
 <div class="row mt-3">
    
-    <div class="col-md-8 main-loop">
+    <div class="col-md-8 main-loop" style="margin: auto;">
         
-        <h4 class="font-weight-bold spanborder"><span>All Stories</span></h4>
+        <h4 class="font-weight-bold spanborder"><span>All FILES</span></h4>
         
 
         {% for post in paginator.posts %}
@@ -219,9 +301,9 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
         
     </div>
     
-    <div class="col-md-4">
+    <!-- <div class="col-md-4">
         {% include sidebar-featured.html %}    
-    </div>
+    </div> -->
     
 </div>
 
