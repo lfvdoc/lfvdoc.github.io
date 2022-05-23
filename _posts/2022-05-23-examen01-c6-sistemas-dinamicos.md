@@ -1,7 +1,8 @@
 ---
 author: varbot
 title: ex01-sidin
-sur: https://docs.google.com/document/d/1wCqA58PDEo1805PLDVeuxNB8am72nqwU/edit?usp=sharing&ouid=106103552725839289988&rtpof=true&sd=true
+sur: 
+vdfi: /uploads/copia-de-1er-examen-parcial-de-sistemas-dinamicos-docx.pdf
 image: "/uploads/copia-de-1er-examen-parcial-de-sistemas-dinamicos-docx-documentos-de-google-google-chrome.jpg"
 layout: vdoc
 categories: []
