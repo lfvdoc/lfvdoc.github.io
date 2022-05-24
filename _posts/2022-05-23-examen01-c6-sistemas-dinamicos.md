@@ -1,7 +1,7 @@
 ---
 author: varbot
 title: ex01-sidin
-sur: https://mag.wcoomd.org/uploads/2018/05/blank.pdf
+sur: https://lfrakie.github.io/data-temp-stor/1erEXAMEPARCIALDESISTEMASDINAMICOS.docx.pdf
 image: "/uploads/copia-de-1er-examen-parcial-de-sistemas-dinamicos-docx-documentos-de-google-google-chrome.jpg"
 layout: vdoc
 categories: []
