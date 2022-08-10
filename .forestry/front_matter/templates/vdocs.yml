@@ -11,15 +11,6 @@ fields:
   label: Titulo
   config:
     required: false
-- name: sur
-  type: text
-  config:
-    required: false
-  label: Var URL
-  showOnly:
-    field: url_or_doc
-    value: true
-  default: ''
 - name: sur-doc
   type: file
   config:
@@ -27,7 +18,17 @@ fields:
   showOnly:
     field: url_or_doc
     value: false
-  label: Var Document
+  label: Modo Documento Activado
+- name: sur
+  type: text
+  config:
+    required: false
+  label: MODO URL ACTIVADO
+  showOnly:
+    field: url_or_doc
+    value: true
+  default: ''
+  description: Estas en el modo de URL
 - type: list
   name: categories
   label: Categorías
