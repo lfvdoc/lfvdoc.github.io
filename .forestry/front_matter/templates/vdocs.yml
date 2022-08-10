@@ -2,15 +2,15 @@
 label: vdocs-template
 hide_body: true
 fields:
-- name: url_or_doc
-  type: boolean
-  default: false
-  label: 'Document / URL '
 - type: text
   name: title
   label: Titulo
   config:
     required: false
+- name: url_or_doc
+  type: boolean
+  default: false
+  label: 'Document / URL '
 - name: sur-doc
   type: file
   config:
