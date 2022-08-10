@@ -1,5 +1,5 @@
 ---
-label: Vdocs
+label: vdocs-template
 hide_body: true
 fields:
 - type: text
@@ -8,13 +8,18 @@ fields:
   config:
     required: false
 - type: file
-  name: vdfi
-  label: Archivo
+  name: image
+  label: Portada
   config:
     maxSize: 
-- type: text
-  name: sur
-  label: Enlace
+  default: "/uploads/docs-icon.jpg"
+- name: sur
+  type: file
+  config:
+    maxSize: 64
+  showOnly:
+    field: url_or_doc
+  label: Document
 - type: list
   name: categories
   label: Categorías
@@ -44,5 +49,9 @@ fields:
   name: tags
   label: tags
   hidden: true
+- name: url_or_doc
+  type: boolean
+  label: Url or Doc
+  default: true
 pages:
 - _posts/2022-08-10-test-beta-vd.md
