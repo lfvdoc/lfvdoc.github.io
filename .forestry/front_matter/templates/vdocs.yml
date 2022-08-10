@@ -9,8 +9,8 @@ fields:
     required: false
 - name: url_or_doc
   type: boolean
-  default: true
-  label: Doc or URL checker
+  default: false
+  label: 'Document / URL '
 - name: sur
   type: text
   config:
@@ -18,7 +18,7 @@ fields:
   label: Var URL
   showOnly:
     field: url_or_doc
-    value: false
+    value: true
   default: ''
 - name: sur-doc
   type: file
@@ -26,7 +26,7 @@ fields:
     maxSize: 64
   showOnly:
     field: url_or_doc
-    value: true
+    value: false
   label: Var Document
 - type: file
   name: image
