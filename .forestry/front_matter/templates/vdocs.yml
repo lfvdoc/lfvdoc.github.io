@@ -18,12 +18,12 @@ fields:
   showOnly:
     field: url_or_doc
     value: false
-  label: Modo Documento Activado
+  label: Documento
 - name: sur
   type: text
   config:
     required: false
-  label: MODO URL ACTIVADO
+  label: URL
   showOnly:
     field: url_or_doc
     value: true
