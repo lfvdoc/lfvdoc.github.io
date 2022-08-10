@@ -13,12 +13,17 @@ fields:
   config:
     maxSize: 
   default: "/uploads/docs-icon.jpg"
+- name: url_or_doc
+  type: boolean
+  label: Url or Doc
+  default: true
 - name: sur
   type: file
   config:
     maxSize: 64
   showOnly:
     field: url_or_doc
+    value: true
   label: Document
 - type: list
   name: categories
@@ -49,9 +54,5 @@ fields:
   name: tags
   label: tags
   hidden: true
-- name: url_or_doc
-  type: boolean
-  label: Url or Doc
-  default: true
 pages:
 - _posts/2022-08-10-test-beta-vd.md
