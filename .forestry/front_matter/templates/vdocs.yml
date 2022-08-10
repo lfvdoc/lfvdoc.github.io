@@ -25,6 +25,15 @@ fields:
     field: url_or_doc
     value: true
   label: Document
+- name: sura
+  type: text
+  config:
+    required: false
+  label: var-url
+  showOnly:
+    field: url_or_doc
+    value: false
+  default: ''
 - type: list
   name: categories
   label: Categorías
