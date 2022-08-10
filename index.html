@@ -29,7 +29,7 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
                 </a>
             </div>
                 
-
+ 
 
             <div class="catego-card">
                  <span>
@@ -56,7 +56,7 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
 
             {% if latest_post.image %}
             <a href=".{{latest_post.url}}">
-                <div style="background-image: url({% if latest_post.image contains "://" %}{{ latest_post.image }}{% else %} .{{ latest_post.image}}{% endif %}); height: 100%;    background-size: cover;    background-repeat: no-repeat;  background-position:center;">
+                <div id="card-bg" style="background-image: url({% if latest_post.image contains "://" %}{{ latest_post.image }}{% else %} .{{ latest_post.image}}{% endif %}); height: 100%;    background-size: cover;    background-repeat: no-repeat;  background-position:center;">
                 </div>
             </a>
             {% endif %}
