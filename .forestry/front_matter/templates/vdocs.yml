@@ -28,12 +28,6 @@ fields:
     field: url_or_doc
     value: false
   label: Var Document
-- type: file
-  name: image
-  label: Portada
-  config:
-    maxSize: 
-  default: "/uploads/docs-icon.jpg"
 - type: list
   name: categories
   label: Categorías
@@ -49,6 +43,12 @@ fields:
     - ISO
     - Arq
     - Mate
+- type: file
+  name: image
+  label: Portada
+  config:
+    maxSize: 
+  default: "/uploads/docs-icon.jpg"
 - type: text
   name: author
   label: author
