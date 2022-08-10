@@ -1,5 +1,5 @@
 ---
-label: Vdocs
+label: vdocs-template
 hide_body: true
 fields:
 - type: text
@@ -8,13 +8,32 @@ fields:
   config:
     required: false
 - type: file
-  name: vdfi
-  label: Archivo
+  name: image
+  label: Portada
   config:
     maxSize: 
-- type: text
-  name: sur
-  label: Enlace
+  default: "/uploads/docs-icon.jpg"
+- name: url_or_doc
+  type: boolean
+  label: Url or Doc
+  default: true
+- name: sur
+  type: file
+  config:
+    maxSize: 64
+  showOnly:
+    field: url_or_doc
+    value: true
+  label: Document
+- name: sura
+  type: text
+  config:
+    required: false
+  label: var-url
+  showOnly:
+    field: url_or_doc
+    value: false
+  default: ''
 - type: list
   name: categories
   label: Categorías
@@ -45,4 +64,5 @@ fields:
   label: tags
   hidden: true
 pages:
+- _posts/2022-08-10-bbbbbb.md
 - _posts/2022-08-10-test-beta-vd.md
