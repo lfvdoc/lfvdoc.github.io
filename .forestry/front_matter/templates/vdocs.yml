@@ -44,3 +44,5 @@ fields:
   name: tags
   label: tags
   hidden: true
+pages:
+- _posts/test-beta-vd.md
