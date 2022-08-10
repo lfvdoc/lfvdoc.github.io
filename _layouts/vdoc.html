@@ -7,10 +7,20 @@
 
 <body style="margin:0px;padding:0px;overflow:hidden">
 	{% if page.sur == "" %}
-	<iframe src="{{site.url}}{{ site.baseurl }}{{ page.url }}" frameborder="0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px" height="100%" width="100%"></iframe>
+  <iframe src="{{ page.sur-doc }}" frameborder="0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px" height="100%" width="100%"></iframe>
+
 	{% else %}
 	<iframe src="{{ page.sur }}" frameborder="0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px" height="100%" width="100%"></iframe>
 	{% endif %}
+
+
+<!-- {% if page.sur == "" %} -->
+	<!-- <iframe src="{{site.url}}{{ site.baseurl }}{{ page.url }}" frameborder="0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px" height="100%" width="100%"></iframe> -->
+	<!-- {% else %} -->
+	<!-- <iframe src="{{ page.sur }}" frameborder="0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px" height="100%" width="100%"></iframe> -->
+	<!-- {% endif %} -->
+
+
 </body>
 
 </html>
