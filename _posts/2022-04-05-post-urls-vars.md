@@ -8,7 +8,7 @@ tags: []
 
 
 ---
-Post de puebas para para ver URLS variables de jekyll 
+Practice post
 
 site url:
 {{site.url}}

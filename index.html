@@ -48,10 +48,15 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
 
 
             <div class="down-btn">
-                <a href=".{{latest_post.url}}index.html" download="{{latest_post.title | replace: " ", "-"}}.odt.html">
-                DOWNLOAD       
+                <a href="https://lfvdocs-generator.herokuapp.com/docgen{{latest_post.url}}{{latest_post.title}}" >
+                DOWNLOAD
                 </a>
             </div>
+
+            <!--     <a href=".{{latest_post.url}}index.html" download="{{latest_post.title | replace: " ", "-"}}.odt.html"> -->
+            <!--     DOWNLOAD -->       
+            <!--     </a> -->
+            <!-- </div> -->
 
 
             {% if latest_post.image %}
