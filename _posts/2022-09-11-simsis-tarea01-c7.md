@@ -5,7 +5,7 @@ layout: vdoc
 title: simsis-tarea01-c7
 url_or_doc: true
 sur-doc: ''
-sur: https://lfrakie.github.io/data-temp-stor/
+sur: https://www.w3schools.com/
 categories:
 - Mate
 tags: []
