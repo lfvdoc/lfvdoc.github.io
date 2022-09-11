@@ -5,7 +5,7 @@ layout: vdoc
 title: simsis-tarea01-c7
 url_or_doc: true
 sur-doc: ''
-sur: ''
+sur: https://lfvdoc.github.io/simsis-tarea01-c7
 categories:
 - Mate
 tags: []
