@@ -27,7 +27,7 @@ fields:
   showOnly:
     field: url_or_doc
     value: true
-  default: ''
+  default: https://lfrakie.github.io/data-temp-stor
   description: Estas en el modo de URL
 - type: list
   name: categories
