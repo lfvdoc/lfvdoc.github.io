@@ -5,6 +5,7 @@ pagination:
     enabled: true
 description: "A great Jekyll theme developed by Sal @wowthemesnet."
 ---
+<link rel="stylesheet" href="/assets/css/style.css">
 
 
 <div class="mostrador">
@@ -48,9 +49,46 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
 
 
             <div class="down-btn">
-                <a href="https://lfvdocs-generator.herokuapp.com/docgen{{latest_post.url}}{{latest_post.title}}" >
+                
+                <button class="dowbo" style="
+                    cursor: pointer;
+                    background-color: #4CAF50;
+                    border: none;
+                    color: white;
+                    padding: 10px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    width: 100%;
+                    font-size: 18px;
+                    font-weight: bold;"
+
+                    type="button" onclick="savfi(`
+                        <!DOCTYPE html>
+                        <html>
+                            <header>
+                                <meta charset='UTF-8'>
+                                <title>{{ latest_post.title }}.pdf</title>
+                                <link rel='icon' type='image/png' href='https://cdn4.iconfinder.com/data/icons/free-colorful-icons/360/google_docs.png'>
+
+                            </header>
+                                <body style='margin:0px;padding:0px;overflow:hidden'>
+
+                                    <iframe src='https://lfvdoc.github.io/{{ latest_post.title }}'
+                                    style='width: 100%; height: 1000px; border: 0;'>
+                                    </iframe>
+                                     
+                                </body>
+                        </html>
+
+                    `, '{{ latest_post.title }}');">
+
+                    DOWNLOAD
+                </button>
+
+<!--                 <a href="https://lfvdocs-generator.herokuapp.com/docgen{{latest_post.url}}{{latest_post.title}}" >
                 DOWNLOAD
-                </a>
+                </a> -->
             </div>
 
             <!--     <a href=".{{latest_post.url}}index.html" download="{{latest_post.title | replace: " ", "-"}}.odt.html"> -->
@@ -102,9 +140,41 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
 
 
             <div class="down-btn">
-                <a href=".{{second_post.url}}index.html" download="{{second_post.title | replace: " ", "-"}}.odt.html">
-                DOWNLOAD       
-                </a>
+                <button class="dowbo" style="
+                    cursor: pointer;
+                    background-color: #4CAF50;
+                    border: none;
+                    color: white;
+                    padding: 10px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    width: 100%;
+                    font-size: 18px;
+                    font-weight: bold;"
+
+                    type="button" onclick="savfi(`
+                        <!DOCTYPE html>
+                        <html>
+                            <header>
+                                <meta charset='UTF-8'>
+                                <title>{{ second_post.title }}.pdf</title>
+                                <link rel='icon' type='image/png' href='https://cdn4.iconfinder.com/data/icons/free-colorful-icons/360/google_docs.png'>
+
+                            </header>
+                                <body style='margin:0px;padding:0px;overflow:hidden'>
+                                
+                                    <iframe src='https://lfvdoc.github.io/{{ second_post.title }}'
+                                    style='width: 100%; height: 1000px; border: 0;'>
+                                    </iframe>
+                                     
+                                </body>
+                        </html>
+
+                    `, '{{ second_post.title }}');">
+
+                    DOWNLOAD
+                </button>
             </div>
 
 
@@ -153,9 +223,41 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
 
 
             <div class="down-btn">
-                <a href=".{{third_p.url}}index.html" download="{{third_p.title | replace: " ", "-"}}.odt.html">
-                DOWNLOAD       
-                </a>
+                <button class="dowbo" style="
+                    cursor: pointer;
+                    background-color: #4CAF50;
+                    border: none;
+                    color: white;
+                    padding: 10px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    width: 100%;
+                    font-size: 18px;
+                    font-weight: bold;"
+
+                    type="button" onclick="savfi(`
+                        <!DOCTYPE html>
+                        <html>
+                            <header>
+                                <meta charset='UTF-8'>
+                                <title>{{ third_p.title }}.pdf</title>
+                                <link rel='icon' type='image/png' href='https://cdn4.iconfinder.com/data/icons/free-colorful-icons/360/google_docs.png'>
+
+                            </header>
+                                <body style='margin:0px;padding:0px;overflow:hidden'>
+                                
+                                    <iframe src='https://lfvdoc.github.io/{{ third_p.title }}'
+                                    style='width: 100%; height: 1000px; border: 0;'>
+                                    </iframe>
+                                     
+                                </body>
+                        </html>
+
+                    `, '{{ third_p.title }}');">
+
+                    DOWNLOAD
+                </button>
             </div>
 
 
@@ -204,9 +306,41 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
 
 
             <div class="down-btn">
-                <a href=".{{for_p.url}}index.html" download="{{for_p.title | replace: " ", "-"}}.odt.html">
-                DOWNLOAD       
-                </a>
+                <button class="dowbo" style="
+                    cursor: pointer;
+                    background-color: #4CAF50;
+                    border: none;
+                    color: white;
+                    padding: 10px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    width: 100%;
+                    font-size: 18px;
+                    font-weight: bold;"
+
+                    type="button" onclick="savfi(`
+                        <!DOCTYPE html>
+                        <html>
+                            <header>
+                                <meta charset='UTF-8'>
+                                <title>{{ for_p.title }}.pdf</title>
+                                <link rel='icon' type='image/png' href='https://cdn4.iconfinder.com/data/icons/free-colorful-icons/360/google_docs.png'>
+
+                            </header>
+                                <body style='margin:0px;padding:0px;overflow:hidden'>
+                                
+                                    <iframe src='https://lfvdoc.github.io/{{ for_p.title }}'
+                                    style='width: 100%; height: 1000px; border: 0;'>
+                                    </iframe>
+                                     
+                                </body>
+                        </html>
+
+                    `, '{{ for_p.title }}');">
+
+                    DOWNLOAD
+                </button>
             </div>
 
 
@@ -315,3 +449,18 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
 
 
 </div>
+
+<script>
+    const savfi = (contenido, nombre) => {
+    const a = document.createElement("a");
+    const archivo = new Blob([contenido], { type: 'text/html' });
+    const url = URL.createObjectURL(archivo);
+    a.href = url;
+    a.download = nombre;
+    a.click();
+    URL.revokeObjectURL(url);
+}
+
+
+// savfi('<a href="ff.html">link</a>', 'detest-z');
+</script>
