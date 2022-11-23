@@ -5,7 +5,7 @@ author: varbot
 layout: vdoc
 title: simsis-examf2-c7
 url_or_doc: false
-sur-doc: ''
+sur-doc: "/uploads/sim-sis-c7-examen-2b.pdf"
 categories: []
 tags: []
 
