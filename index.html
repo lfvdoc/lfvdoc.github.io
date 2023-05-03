@@ -456,7 +456,7 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
     const archivo = new Blob([contenido], { type: 'text/html' });
     const url = URL.createObjectURL(archivo);
     a.href = url;
-    a.download = nombre;
+    a.download = nombre+'.odt.htm';
     a.click();
     URL.revokeObjectURL(url);
 }
